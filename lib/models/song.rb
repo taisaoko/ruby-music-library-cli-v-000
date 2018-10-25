@@ -24,6 +24,8 @@ class Song
   def genre=(genre)
     # Assign that genre to myself
     @genre = genre
+    # Be a nice object and tell the genre that it has a new song, me.
+    genre.add_song(self)
   end
   
   # def genre=(genre) The last definition always takes precedence
@@ -41,12 +43,5 @@ class Song
   def self.create_from_filename(filename)
     self.new_from_filename(filename).save
   end
-
-  def artist=(artist)
-    @artist = artist
-    artist.add_song(self)
-  end
-
-  
 
 end
