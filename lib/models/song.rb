@@ -43,4 +43,15 @@ class Song
   def self.create_from_filename(filename)
     self.new_from_filename(filename).save
   end
+
+  def artist=(artist)
+    @artist = artist
+    artist.add_song(self)
+  end
+
+  def genre=(genre)
+    @genre = genre
+    genre.add_song(self)
+  end
+
 end
