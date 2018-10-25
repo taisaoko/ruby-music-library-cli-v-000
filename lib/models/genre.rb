@@ -19,7 +19,7 @@ class Genre
     self.songs << song unless self.songs.include?(song)
   end
 
-  def artists # it has many through
+  def artists # creates a has many through
     @songs.collect {|song| song.artist}.uniq
   end
 end
