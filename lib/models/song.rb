@@ -21,7 +21,7 @@ class Song
     artist.add_song(self)
   end
   
-  def genre=(genre)
+  def genre=(genre) # a reciprocal belongs to
     # Assign that genre to myself
     @genre = genre
     # Be a nice object and tell the genre that it has a new song, me.
