@@ -22,8 +22,6 @@ class Song
   end
   
   def genre=(genre)
-    # Be a nice object and tell the genre that it has a new song, me.
-    genre.add_song(self)
     # Assign that genre to myself
     @genre = genre
     
