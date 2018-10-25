@@ -1,5 +1,5 @@
 class Genre
-  attr_accessor :name, :songs
+  attr_accessor :name, :songs # has many songs
 
   extend Concerns::Findable
   extend Persistable::ClassMethods
