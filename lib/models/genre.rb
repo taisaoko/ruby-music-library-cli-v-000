@@ -1,6 +1,8 @@
 class Genre
   attr_accessor :name, :songs # has many songs
-
+  # Builder Pattern
+  # Mixin Pattern
+  # Module Pattern
   extend Concerns::Findable
   extend Persistable::ClassMethods
   include Persistable::InstanceMethods
